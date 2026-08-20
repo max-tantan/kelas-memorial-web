@@ -1,11 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import {
-  motion,
-  useScroll,
-  useTransform,
-  animate,
-  useInView,
-} from 'framer-motion'
+import { motion, animate, useInView } from 'framer-motion'
 import { CHAPTERS, FINAL_COMMIT } from '../data/content'
 import type { Chapter } from '../data/content'
 
@@ -94,13 +88,6 @@ function CommitCard({ chapter, index }: { chapter: Chapter; index: number }) {
 }
 
 export default function Timeline() {
-  const timelineRef = useRef<HTMLDivElement>(null)
-  const { scrollYProgress } = useScroll({
-    target: timelineRef,
-    offset: ['start 0.75', 'end 0.55'],
-  })
-  const progressScale = useTransform(scrollYProgress, [0, 1], [0, 1])
-
   return (
     <section id="perjalanan" className="section">
       <div className="container">
@@ -122,13 +109,8 @@ export default function Timeline() {
           </p>
         </motion.div>
 
-        <div className="timeline" ref={timelineRef}>
+        <div className="timeline">
           <div className="timeline__line" aria-hidden="true" />
-          <motion.div
-            className="timeline__progress"
-            style={{ scaleY: progressScale }}
-            aria-hidden="true"
-          />
 
           {CHAPTERS.map((chapter, index) => (
             <div

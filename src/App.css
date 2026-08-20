@@ -240,21 +240,6 @@
   }
 }
 
-.timeline__progress {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: calc(50% - 1.5px);
-  width: 3px;
-  background: var(--blue);
-  transform-origin: top;
-  z-index: 2;
-
-  @media (max-width: 860px) {
-    left: calc(0.9rem - 1.5px);
-  }
-}
-
 .typed__caret {
   display: inline-block;
   width: 0.55em;
@@ -270,12 +255,12 @@
   width: 50%;
   padding: 1.5rem 0;
 
-  &--left {
+  &.timeline__row--left {
     left: 0;
     padding-right: 3.5rem;
   }
 
-  &--right {
+  &.timeline__row--right {
     left: 50%;
     padding-left: 3.5rem;
   }
@@ -284,6 +269,10 @@
     width: 100%;
     left: 0 !important;
     padding: 1.25rem 0 1.25rem 3rem !important;
+
+    &.timeline__row--right {
+      padding-left: 6rem !important;
+    }
   }
 }
 
@@ -334,16 +323,16 @@
   font-size: 0.75rem;
   font-weight: 700;
 
-  &--yellow {
+  &.commit__header--yellow {
     background: var(--yellow);
   }
 
-  &--blue {
+  &.commit__header--blue {
     background: var(--blue);
     color: #fff;
   }
 
-  &--green {
+  &.commit__header--green {
     background: var(--green);
     color: #fff;
   }
