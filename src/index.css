@@ -1,0 +1,261 @@
+:root {
+  --paper: #fff9ec;
+  --ink: #111111;
+  --yellow: #ffd500;
+  --red: #ff4d4d;
+  --blue: #2d6cdf;
+  --green: #00c853;
+  --orange: #ff7a2f;
+  --pink: #ff8fc8;
+  --cork: #dca968;
+  --paper-pastel: #fff4d6;
+  --note-pink: #ffd1dc;
+  --note-blue: #b8e4f0;
+  --note-green: #c9f2c7;
+  --note-yellow: #fff3b0;
+  --note-lilac: #dcd3ff;
+
+  --font-display: 'Archivo Black', system-ui, sans-serif;
+  --font-body: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --border-w: 3px;
+  --shadow: 6px 6px 0 var(--ink);
+  --shadow-sm: 4px 4px 0 var(--ink);
+
+  font: 16px/1.6 var(--font-body);
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: clip;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+img,
+svg,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  scroll-margin-top: 96px;
+}
+
+::selection {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
+}
+
+.container {
+  width: min(1120px, 100% - 2.5rem);
+  margin-inline: auto;
+}
+
+/* ============ neo-brutal building blocks ============ */
+
+.brutal-card {
+  background: #fff;
+  border: var(--border-w) solid var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.brutal-card--yellow {
+  background: var(--yellow);
+}
+
+.brutal-card--red {
+  background: var(--red);
+  color: #fff;
+}
+
+.brutal-card--blue {
+  background: var(--blue);
+  color: #fff;
+}
+
+.brutal-card--green {
+  background: var(--green);
+  color: #fff;
+}
+
+.brutal-card--ink {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.brutal-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.4rem;
+  background: var(--yellow);
+  border: var(--border-w) solid var(--ink);
+  box-shadow: var(--shadow-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease;
+}
+
+.brutal-btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+.brutal-btn:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 var(--ink);
+}
+
+.brutal-btn--ink {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.brutal-btn--red {
+  background: var(--red);
+  color: #fff;
+}
+
+.sticker {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border: var(--border-w) solid var(--ink);
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transform: rotate(-2deg);
+}
+
+.section-label {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  color: var(--ink);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  line-height: 1.02;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+.section {
+  padding-block: clamp(4rem, 9vw, 7rem);
+}
+
+/* ============ marquee ============ */
+
+.marquee {
+  overflow: hidden;
+  border-block: var(--border-w) solid var(--ink);
+  background: var(--yellow);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.marquee__track {
+  display: inline-flex;
+  padding-block: 0.7rem;
+  will-change: transform;
+}
+
+.marquee__track span {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding-inline: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.marquee__track span::after {
+  content: '✦';
+}
+
+/* ============ sticky notes ============ */
+
+.note {
+  padding: 1.2rem;
+  border: var(--border-w) solid var(--ink);
+  box-shadow: var(--shadow-sm);
+  font-family: var(--font-mono);
+}
+
+/* ============ reduced motion ============ */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
