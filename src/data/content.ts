@@ -1,8 +1,10 @@
 export const NAV_LINKS = [
   { label: 'Perjalanan', href: '#perjalanan' },
+  { label: 'Anggota', href: '#anggota' },
   { label: 'Statistik', href: '#statistik' },
   { label: 'Galeri', href: '#galeri' },
   { label: 'Pesan', href: '#pesan' },
+  { label: 'Terminal', href: '#terminal' },
 ]
 
 export const HERO = {
@@ -232,3 +234,238 @@ export const FOOTER = {
   class: 'PPLG 3',
   note: 'Dibuat dengan kopi & kenangan oleh murid-murid PPLG 3 — 2026',
 }
+
+export type Member = {
+  name: string
+  nickname: string
+  emoji: string
+  role: string
+  quote: string
+  color: string
+}
+
+export const MEMBERS: Member[] = [
+  {
+    name: 'Arif Darmawan',
+    nickname: 'ARIF',
+    emoji: '👨‍💻',
+    role: 'fullstack gabut',
+    quote: 'mie instan itu bahasa pemrograman tingkat tinggi',
+    color: 'var(--note-yellow)',
+  },
+  {
+    name: 'Bella Safitri',
+    nickname: 'BELLA',
+    emoji: '🎨',
+    role: 'ui/ux accidental',
+    quote: 'satu pixel geser dikit aja, bentar lagi deadline',
+    color: 'var(--note-pink)',
+  },
+  {
+    name: 'Candra Wijaya',
+    nickname: 'CANDRA',
+    emoji: '🎧',
+    role: 'audio engineering nggak jelas',
+    quote: 'playlist-nya nangis, ketikannya error terus',
+    color: 'var(--note-blue)',
+  },
+  {
+    name: 'Dewi Lestari',
+    nickname: 'DEWI',
+    emoji: '📊',
+    role: 'data analyst dadakan',
+    quote: 'diukur? nggak. kira-kira? iya.',
+    color: 'var(--note-green)',
+  },
+  {
+    name: 'Eko Prasetyo',
+    nickname: 'EKO',
+    emoji: '🤖',
+    role: 'bot whisperer',
+    quote: 'aku nggak ngoding, aku ngobrol sama mesin',
+    color: 'var(--note-lilac)',
+  },
+  {
+    name: 'Fitri Handayani',
+    nickname: 'FITRI',
+    emoji: '📱',
+    role: 'mobile dev (iya, nanti jadi)',
+    quote: 'aplikasinya jalan… di mimpi',
+    color: 'var(--note-pink)',
+  },
+  {
+    name: 'Galih Ramadhan',
+    nickname: 'GALIH',
+    emoji: '🕹️',
+    role: 'game dev calon',
+    quote: 'bug bukan bug, itu fitur tersembunyi',
+    color: 'var(--note-yellow)',
+  },
+  {
+    name: 'Hana Kartika',
+    nickname: 'HANA',
+    emoji: '🔍',
+    role: 'tester rela bayar',
+    quote: 'aku bukan nge-bug report, aku nulis novel',
+    color: 'var(--note-green)',
+  },
+  {
+    name: 'Ilham Nugroho',
+    nickname: 'ILHAM',
+    emoji: '☕',
+    role: 'kopi + debugger',
+    quote: 'kopinya habis, errornya nyangkut',
+    color: 'var(--note-blue)',
+  },
+  {
+    name: 'Joko Santoso',
+    nickname: 'JOKO',
+    emoji: '😴',
+    role: 'bangunin backend',
+    quote: 'server tidur, aku ikut tidur',
+    color: 'var(--note-lilac)',
+  },
+  {
+    name: 'Kirana Putri',
+    nickname: 'KIRANA',
+    emoji: '🌟',
+    role: 'galeri & foto',
+    quote: 'tiap frame = 1 kenangan ter-backup',
+    color: 'var(--note-pink)',
+  },
+  {
+    name: 'Lukman Hakim',
+    nickname: 'LUKMAN',
+    emoji: '🛠️',
+    role: 'tukang rapihin code',
+    quote: 'rapihin dulu biar nggak pusing besok',
+    color: 'var(--note-yellow)',
+  },
+]
+
+export type MemoryCell = {
+  date: string
+  level: number
+}
+
+export const HEATMAP_LEVELS = [
+  'var(--paper)',
+  'var(--note-green)',
+  'var(--note-blue)',
+  'var(--yellow)',
+  'var(--red)',
+]
+
+export const HEATMAP_MONTHS = [
+  { label: 'JUL', col: 0 },
+  { label: 'NOV', col: 3 },
+  { label: 'MAR', col: 7 },
+  { label: 'JUL', col: 10 },
+  { label: 'NOV', col: 13 },
+  { label: 'MAR', col: 16 },
+  { label: 'JUL', col: 19 },
+  { label: 'NOV', col: 22 },
+  { label: 'JAN', col: 23 },
+  { label: 'MEI', col: 25 },
+]
+
+export const MEMORY_HEATMAP: number[][] = [
+  [0, 0, 1, 1, 1, 2, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 2, 1, 1, 2, 3, 3, 2, 2, 1],
+  [0, 1, 2, 1, 2, 3, 2, 2, 3, 2, 2, 3, 2, 1, 2, 3, 3, 2, 3, 2, 2, 4, 4, 3, 3, 2],
+  [0, 1, 2, 3, 4, 3, 3, 2, 3, 3, 2, 3, 3, 2, 1, 2, 3, 3, 4, 3, 3, 3, 4, 4, 3, 3],
+  [1, 2, 3, 4, 4, 4, 3, 3, 3, 2, 3, 4, 4, 3, 2, 2, 3, 4, 4, 4, 3, 4, 4, 4, 4, 3],
+  [1, 2, 3, 3, 4, 4, 3, 2, 2, 3, 2, 3, 3, 2, 2, 3, 3, 3, 4, 4, 3, 3, 4, 4, 3, 3],
+  [1, 2, 2, 3, 3, 3, 2, 2, 2, 1, 2, 2, 3, 2, 1, 2, 3, 3, 3, 3, 2, 3, 4, 3, 3, 2],
+  [0, 1, 2, 2, 2, 2, 2, 1, 2, 1, 1, 2, 2, 2, 1, 2, 2, 2, 3, 2, 2, 2, 3, 3, 2, 2],
+]
+
+export type Quote = {
+  text: string
+  source: string
+}
+
+export const QUOTES: Quote[] = [
+  {
+    text: 'Deadline itu yang bikin kami akrab — siapa sangka takut jadi cinta.',
+    source: 'anon #7',
+  },
+  {
+    text: 'Mie instan kami bisa, JavaScript kami bisa — hidup memang penuh pilihan sulit.',
+    source: 'anon #4',
+  },
+  {
+    text: 'Tiga tahun terasa cepat. Mungkin karena streaming-nya nggak pernah buffering.',
+    source: 'anon #2',
+  },
+  {
+    text: 'Kelas ini bukan cuma kelas, tapi stack yang paling sulit di-uninstall.',
+    source: 'anon #9',
+  },
+  {
+    text: 'Kalau kenangan di-deploy, server mana yang sanggup?',
+    source: 'anon #1',
+  },
+  {
+    text: 'Sampai ketemu di commit berikutnya — jangan lupa git pull sahabat lama.',
+    source: 'anon #12',
+  },
+]
+
+export const TERMINAL_BOOT = [
+  'PPLG3@memorial:~$ nc kenangan.local 8080',
+  'membuka koneksi ke server kenangan...',
+  'handshake OK · cipher: mieinstan-256',
+  'selamat datang di Memorial XII PPLG 3',
+  'ketik "help" untuk daftar perintah.',
+]
+
+export const TERMINAL_CMD: Record<string, string[]> = {
+  help: [
+    'perintah yang tersedia:',
+    '  ls        · daftar folder kenangan',
+    '  kenangan  · ambil 1 kenangan acak',
+    '  mie       · status stok mie instan',
+    '  wali      · info wali kelas',
+    '  member    · jumlah anggota kelas',
+    '  nasihat   · nasihat dadakan',
+    '  whoami    · jati diri sejati',
+    '  clear     · bersihkan layar',
+    '  exit      · tutup sesi (tapi jangan, ya)',
+  ],
+  ls: [
+    'drwxr-xr-x kenangan/',
+    'drwxr-xr-x mpls/',
+    'drwxr-xr-x pkl/',
+    'drwxr-xr-x lomba/',
+    'drwxr-xr-x deadline/',
+    'drwxr-xr-x mie-instan/',
+    '-rw------- tugas-akhir.tmp',
+  ],
+  kenangan: [
+    'memutar kenangan acak...',
+    '📼 2024, Pak Guru bilang "kumpulin 2 minggu lagi",',
+    '   kami semua kumpul jam 23.59 malemnya.',
+    '   Server selamat. Nyawa kami hampir nggak.',
+  ],
+  mie: [
+    'stok mie instan: 100% 🔥',
+    'sejak kelas 10, janji makan sehat: nggak pernah ter-commit.',
+  ],
+  wali: [
+    'wali kelas: manusia paling sabar di repo ini',
+    'status: sering begah, tapi nggak pernah push bilang capek.',
+  ],
+  member: ['36 murid. 1 repo. 0 yang mau terpisah.'],
+  nasihat: [
+    'nasihat hari ini:',
+    'jangan lupa makan, jangan lupa solat,',
+    'dan jangan commit kalau nggak kenyang.',
+  ],
+  whoami: ['kamu: kenangan yang belum selesai diceritakan.'],
+  exit: ['sesi nggak bisa ditutup. kenangan nggak punya tombol close.'],
+}
+
+export const TERMINAL_FALLBACK = [
+  'perintah tidak dikenal. coba "help".',
+  '(atau ketik "mie" kalau lagi laper, jangan tanya kenapa)',
+]
