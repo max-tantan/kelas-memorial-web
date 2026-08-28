@@ -1,0 +1,40 @@
+{
+  "messages": [
+    {
+      "author": "anon-01",
+      "text": "Terima kasih sudah jadi teman gabut terbaik. Sampai jumpa di meetup alumni!",
+      "color": "#ffd1dc",
+      "rotate": -2
+    },
+    {
+      "author": "anon-02",
+      "text": "Awalnya takut masuk kelas ini. Sekarang takut harus keluar. 😭",
+      "color": "#c9f2c7",
+      "rotate": 1
+    },
+    {
+      "author": "anon-03",
+      "text": "Yang diinget bukan materi, tapi tawa pas deadline nempel.",
+      "color": "#fff3b0",
+      "rotate": -1
+    },
+    {
+      "author": "anon-04",
+      "text": "Bang Wali, maaf kalau kami sering bikin begah. Kami sayang Bapak/Ibu!",
+      "color": "#b8e4f0",
+      "rotate": 2
+    },
+    {
+      "author": "anon-05",
+      "text": "Semoga kita semua berhasil di commit masing-masing.",
+      "color": "#dcd3ff",
+      "rotate": -3
+    },
+    {
+      "author": "anon-06",
+      "text": "Satu kelas, satu repo, satu cerita. Jangan lupa update status.",
+      "color": "#ffd1dc",
+      "rotate": 2
+    }
+  ]
+}

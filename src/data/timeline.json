@@ -1,0 +1,59 @@
+{
+  "chapters": [
+    {
+      "year": "KELAS 10",
+      "hash": "1a2b3c4",
+      "branch": "main",
+      "title": "INIT: kelas 10",
+      "date": "2023 – 2024",
+      "message": "Bab pertama. Muka-muka baru, nama-nama yang masih tertukar, dan HTML pertama yang belum paham bedanya <div> dan <span>. Semua masih rookie, dan itu justru serunya.",
+      "changes": [
+        "++ 36 murid baru bergabung",
+        "++ 1 wali kelas yang sabar",
+        "++ mie instan stok awal (1 dus/kelas)",
+        "++ print(\"halo dunia\") pertama",
+        "-- ketakutan tampil di depan kelas"
+      ],
+      "color": "yellow"
+    },
+    {
+      "year": "KELAS 11",
+      "hash": "5d6e7f8",
+      "branch": "dev",
+      "title": "FEAT: kelas 11",
+      "date": "2024 – 2025",
+      "message": "Mulai serius: JavaScript, PHP, database, dan begadang demi deadline. Proyek kelompok pertama, PKL, lomba, sampai nongkrong di depan kelas sambil ngoding bareng.",
+      "changes": [
+        "++ skill baru: JavaScript + database",
+        "++ pengalaman PKL di dunia nyata",
+        "++ proyek kelompok (dan drama deadline)",
+        "++ teman begadang yang setia",
+        "-- tidur siang yang teratur"
+      ],
+      "color": "blue"
+    },
+    {
+      "year": "KELAS 12",
+      "hash": "9a0b1c2",
+      "branch": "release",
+      "title": "RELEASE: kelas 12",
+      "date": "2025 – 2026",
+      "message": "Bab terakhir. Fix bug terakhir, ujian, tugas akhir, dan persiapan menuju dunia nyata. Sedih sih, tapi lihat — kita akhirnya siap di-deploy.",
+      "changes": [
+        "++ kelulusan & tugas akhir",
+        "++ impian + rencana masa depan",
+        "++ #include <kenangan>",
+        "-- waktu di bangku sekolah",
+        "-- alasan ketemu tiap hari"
+      ],
+      "color": "green"
+    }
+  ],
+  "finalCommit": {
+    "hash": "e1e2e3f",
+    "branch": "main → origin/kenangan",
+    "title": "git push origin kenangan",
+    "date": "Mei 2026",
+    "message": "Semua sudah ter-push. Repo kelas kita ditutup, tapi kenangannya nggak akan pernah di-delete."
+  }
+}

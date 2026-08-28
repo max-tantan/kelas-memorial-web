@@ -2,7 +2,10 @@ import { Canvas } from '@react-three/fiber'
 import { motion } from 'framer-motion'
 import Scene3D from './Scene3D'
 import Marquee from './Marquee'
-import { HERO } from '../data/content'
+import heroData from '../data/hero.json'
+import type { HeroContent } from '../data/types'
+
+const HERO = heroData as HeroContent
 
 const container = {
   hidden: {},
@@ -75,15 +78,7 @@ export default function Hero() {
       </div>
 
       <Marquee
-        items={[
-          'XII PPLG 3',
-          '2023 — 2026',
-          'GABUT KELAS',
-          'NGODING',
-          'MIE INSTAN',
-          'DEADLINE',
-          'PPLG FOREVER',
-        ]}
+        items={HERO.marquee}
       />
     </section>
   )

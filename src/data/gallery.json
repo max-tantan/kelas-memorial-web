@@ -1,0 +1,68 @@
+{
+  "photos": [
+    {
+      "file": "mpls-2023.png",
+      "caption": "MPLS — wajah masih polos",
+      "emoji": "🥱",
+      "color": "#ffd1dc",
+      "rotate": -3
+    },
+    {
+      "file": "pertama-ngoding.png",
+      "caption": "HTML pertama: halaman \"Kenalin Diri\"",
+      "emoji": "💻",
+      "color": "#c9f2c7",
+      "rotate": 2
+    },
+    {
+      "file": "tugas-kelompok.jpg",
+      "caption": "Drama deadline + mie instan",
+      "emoji": "🍜",
+      "color": "#fff3b0",
+      "rotate": -2
+    },
+    {
+      "file": "pkl-bareng.jpg",
+      "caption": "PKL: pertama ngerasain kerja",
+      "emoji": "💼",
+      "color": "#b8e4f0",
+      "rotate": 3
+    },
+    {
+      "file": "nongkrong-ngoding.3gp",
+      "caption": "Nongkrong sambil ngoding",
+      "emoji": "🛋️",
+      "color": "#dcd3ff",
+      "rotate": -4
+    },
+    {
+      "file": "lomba-11.jpg",
+      "caption": "Lomba — kalah menang tetep makan",
+      "emoji": "🏆",
+      "color": "#ffd1dc",
+      "rotate": 2
+    },
+    {
+      "file": "foto-bersama-12.png",
+      "caption": "Kelas 12, versi paling dewasa",
+      "emoji": "🎓",
+      "color": "#c9f2c7",
+      "rotate": -2
+    },
+    {
+      "file": "tugas-akhir.gif",
+      "caption": "Tugas akhir: tidur? nanti dulu",
+      "emoji": "🔥",
+      "color": "#fff3b0",
+      "rotate": 3
+    },
+    {
+      "file": "kenangan-terakhir.jpg",
+      "caption": "Yang terakhir, yang paling berat",
+      "emoji": "🫂",
+      "color": "#b8e4f0",
+      "rotate": -1,
+      "featured": true
+    }
+  ]
+}

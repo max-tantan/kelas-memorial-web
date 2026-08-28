@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion'
-import {
-  MEMORY_HEATMAP,
-  HEATMAP_LEVELS,
-  HEATMAP_MONTHS,
-} from '../data/content'
+import heatmapData from '../data/heatmap.json'
+import type { MemoryHeatmap } from '../data/types'
+
+const GRID = heatmapData.grid as MemoryHeatmap
+const LEVELS = heatmapData.levels
+const MONTHS = heatmapData.months
 
 const DAY_LABELS = ['SEN', '', 'RAB', '', 'JUM', '', '']
 
@@ -44,7 +45,7 @@ function Cell({ level, week, day }: { level: number; week: number; day: number }
       <motion.div
         whileHover={{ scale: 1.5, zIndex: 1 }}
         className={`heat__cell heat__cell--l${level}`}
-        style={{ background: HEATMAP_LEVELS[level] }}
+        style={{ background: LEVELS[level] }}
       >
         <span className="heat__tooltip" role="tooltip">
           {dateFor(week, day)} · {LEVEL_LABEL[level]}
@@ -79,7 +80,7 @@ export default function MemoryHeatmap() {
           <div className="heatmap">
             <div className="heat__months" aria-hidden="true">
               <span />
-              {HEATMAP_MONTHS.map((m) => (
+              {MONTHS.map((m) => (
                 <span
                   key={m.label}
                   className="heat__month"
@@ -91,7 +92,7 @@ export default function MemoryHeatmap() {
             </div>
 
             <div className="heat__grid">
-              {MEMORY_HEATMAP.map((week, w) => (
+              {GRID.map((week, w) => (
                 <div
                   key={w}
                   className={`heat__row heat__row--d${w}`}
@@ -112,7 +113,7 @@ export default function MemoryHeatmap() {
         <div className="heat__legend">
           <span className="heat__legend-label">sedikit</span>
           <div className="heat__legend-swatch">
-            {HEATMAP_LEVELS.map((color, i) => (
+            {LEVELS.map((color, i) => (
               <span
                 key={i}
                 className="heat__cell"

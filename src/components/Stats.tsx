@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import { animate, useInView, motion } from 'framer-motion'
-import { STATS, STAT_BARS } from '../data/content'
+import statsData from '../data/stats.json'
+import type { Stat, StatBar } from '../data/types'
+
+const STATS = statsData.stats as Stat[]
+const STAT_BARS = statsData.bars as StatBar[]
 
 function Counter({ value, suffix }: { value: number; suffix: string }) {
   const ref = useRef<HTMLSpanElement>(null)

@@ -1,0 +1,10 @@
+{
+  "links": [
+    { "label": "Perjalanan", "href": "#perjalanan" },
+    { "label": "Anggota", "href": "#anggota" },
+    { "label": "Statistik", "href": "#statistik" },
+    { "label": "Galeri", "href": "#galeri" },
+    { "label": "Pesan", "href": "#pesan" },
+    { "label": "Terminal", "href": "#terminal" }
+  ]
+}

@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion'
-import { MESSAGES } from '../data/content'
+import messagesData from '../data/messages.json'
+import type { Message } from '../data/types'
+
+const MESSAGES = messagesData.messages as Message[]
 
 export default function Messages() {
   return (

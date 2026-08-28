@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion'
 import FlipCard from './FlipCard'
-import { MEMBERS } from '../data/content'
-import type { Member } from '../data/content'
+import membersData from '../data/members.json'
+import type { Member } from '../data/types'
+
+const MEMBERS = membersData.members as Member[]
 
 function MemberCard({ member, index }: { member: Member; index: number }) {
   return (

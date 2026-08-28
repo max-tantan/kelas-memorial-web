@@ -1,0 +1,58 @@
+{
+  "boot": [
+    "PPLG3@memorial:~$ nc kenangan.local 8080",
+    "membuka koneksi ke server kenangan...",
+    "handshake OK · cipher: mieinstan-256",
+    "selamat datang di Memorial XII PPLG 3",
+    "ketik \"help\" untuk daftar perintah."
+  ],
+  "commands": {
+    "help": [
+      "perintah yang tersedia:",
+      "  ls        · daftar folder kenangan",
+      "  kenangan  · ambil 1 kenangan acak",
+      "  mie       · status stok mie instan",
+      "  wali      · info wali kelas",
+      "  member    · jumlah anggota kelas",
+      "  nasihat   · nasihat dadakan",
+      "  whoami    · jati diri sejati",
+      "  clear     · bersihkan layar",
+      "  exit      · tutup sesi (tapi jangan, ya)"
+    ],
+    "ls": [
+      "drwxr-xr-x kenangan/",
+      "drwxr-xr-x mpls/",
+      "drwxr-xr-x pkl/",
+      "drwxr-xr-x lomba/",
+      "drwxr-xr-x deadline/",
+      "drwxr-xr-x mie-instan/",
+      "-rw------- tugas-akhir.tmp"
+    ],
+    "kenangan": [
+      "memutar kenangan acak...",
+      "📼 2024, Pak Guru bilang \"kumpulin 2 minggu lagi\",",
+      "   kami semua kumpul jam 23.59 malemnya.",
+      "   Server selamat. Nyawa kami hampir nggak."
+    ],
+    "mie": [
+      "stok mie instan: 100% 🔥",
+      "sejak kelas 10, janji makan sehat: nggak pernah ter-commit."
+    ],
+    "wali": [
+      "wali kelas: manusia paling sabar di repo ini",
+      "status: sering begah, tapi nggak pernah push bilang capek."
+    ],
+    "member": ["36 murid. 1 repo. 0 yang mau terpisah."],
+    "nasihat": [
+      "nasihat hari ini:",
+      "jangan lupa makan, jangan lupa solat,",
+      "dan jangan commit kalau nggak kenyang."
+    ],
+    "whoami": ["kamu: kenangan yang belum selesai diceritakan."],
+    "exit": ["sesi nggak bisa ditutup. kenangan nggak punya tombol close."]
+  },
+  "fallback": [
+    "perintah tidak dikenal. coba \"help\".",
+    "(atau ketik \"mie\" kalau lagi laper, jangan tanya kenapa)"
+  ]
+}

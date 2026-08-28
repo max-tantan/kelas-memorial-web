@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
-import {
-  TERMINAL_BOOT,
-  TERMINAL_CMD,
-  TERMINAL_FALLBACK,
-} from '../data/content'
+import terminalData from '../data/terminal.json'
+import type { TerminalCommands } from '../data/types'
+
+const TERMINAL_BOOT = terminalData.boot
+const TERMINAL_CMD = terminalData.commands as TerminalCommands
+const TERMINAL_FALLBACK = terminalData.fallback
 
 type Line = {
   text: string

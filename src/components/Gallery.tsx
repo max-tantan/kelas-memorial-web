@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion'
 import TiltCard from './TiltCard'
-import { GALLERY } from '../data/content'
-import type { Polaroid } from '../data/content'
+import galleryData from '../data/gallery.json'
+import type { Polaroid } from '../data/types'
+
+const GALLERY = galleryData.photos as Polaroid[]
 
 function PolaroidCard({ photo, index }: { photo: Polaroid; index: number }) {
   const featured = Boolean(photo.featured)

@@ -1,12 +1,15 @@
 import { motion } from 'framer-motion'
 import Marquee from './Marquee'
-import { FOOTER } from '../data/content'
+import footerData from '../data/footer.json'
+import type { FooterContent } from '../data/types'
+
+const FOOTER = footerData as FooterContent
 
 export default function Footer() {
   return (
     <footer className="footer">
       <Marquee
-        items={['SELAMAT JALAN', 'PPLG 3', 'SAMPAI JUMPA', 'KENANGAN TETAP ADA', 'GABUT FOREVER']}
+        items={FOOTER.marquee}
         color="var(--red)"
         reverse
       />

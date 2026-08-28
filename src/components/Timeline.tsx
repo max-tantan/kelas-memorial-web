@@ -1,7 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, animate, useInView } from 'framer-motion'
-import { CHAPTERS, FINAL_COMMIT } from '../data/content'
-import type { Chapter } from '../data/content'
+import timelineData from '../data/timeline.json'
+import type { Chapter } from '../data/types'
+
+const CHAPTERS = timelineData.chapters as Chapter[]
+const FINAL_COMMIT = timelineData.finalCommit
 
 function TypedText({ text }: { text: string }) {
   const ref = useRef<HTMLSpanElement>(null)

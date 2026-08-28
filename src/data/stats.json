@@ -1,0 +1,14 @@
+{
+  "stats": [
+    { "value": 36, "suffix": "", "label": "murid satu angkatan" },
+    { "value": 3, "suffix": "", "label": "tahun bersama" },
+    { "value": 1095, "suffix": "+", "label": "hari saling menemani" },
+    { "value": 999, "suffix": "+", "label": "kenangan & meme tak terduga" }
+  ],
+  "bars": [
+    { "label": "kenangan", "value": 100 },
+    { "label": "tawa & drama", "value": 100 },
+    { "label": "mie instan terpakai", "value": 100 },
+    { "label": "tidur saat pelajaran", "value": 68 }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "members": [
+    {
+      "name": "Arif Darmawan",
+      "nickname": "ARIF",
+      "emoji": "👨‍💻",
+      "role": "fullstack gabut",
+      "quote": "mie instan itu bahasa pemrograman tingkat tinggi",
+      "color": "var(--note-yellow)"
+    },
+    {
+      "name": "Bella Safitri",
+      "nickname": "BELLA",
+      "emoji": "🎨",
+      "role": "ui/ux accidental",
+      "quote": "satu pixel geser dikit aja, bentar lagi deadline",
+      "color": "var(--note-pink)"
+    },
+    {
+      "name": "Candra Wijaya",
+      "nickname": "CANDRA",
+      "emoji": "🎧",
+      "role": "audio engineering nggak jelas",
+      "quote": "playlist-nya nangis, ketikannya error terus",
+      "color": "var(--note-blue)"
+    },
+    {
+      "name": "Dewi Lestari",
+      "nickname": "DEWI",
+      "emoji": "📊",
+      "role": "data analyst dadakan",
+      "quote": "diukur? nggak. kira-kira? iya.",
+      "color": "var(--note-green)"
+    },
+    {
+      "name": "Eko Prasetyo",
+      "nickname": "EKO",
+      "emoji": "🤖",
+      "role": "bot whisperer",
+      "quote": "aku nggak ngoding, aku ngobrol sama mesin",
+      "color": "var(--note-lilac)"
+    },
+    {
+      "name": "Fitri Handayani",
+      "nickname": "FITRI",
+      "emoji": "📱",
+      "role": "mobile dev (iya, nanti jadi)",
+      "quote": "aplikasinya jalan… di mimpi",
+      "color": "var(--note-pink)"
+    },
+    {
+      "name": "Galih Ramadhan",
+      "nickname": "GALIH",
+      "emoji": "🕹️",
+      "role": "game dev calon",
+      "quote": "bug bukan bug, itu fitur tersembunyi",
+      "color": "var(--note-yellow)"
+    },
+    {
+      "name": "Hana Kartika",
+      "nickname": "HANA",
+      "emoji": "🔍",
+      "role": "tester rela bayar",
+      "quote": "aku bukan nge-bug report, aku nulis novel",
+      "color": "var(--note-green)"
+    },
+    {
+      "name": "Ilham Nugroho",
+      "nickname": "ILHAM",
+      "emoji": "☕",
+      "role": "kopi + debugger",
+      "quote": "kopinya habis, errornya nyangkut",
+      "color": "var(--note-blue)"
+    },
+    {
+      "name": "Joko Santoso",
+      "nickname": "JOKO",
+      "emoji": "😴",
+      "role": "bangunin backend",
+      "quote": "server tidur, aku ikut tidur",
+      "color": "var(--note-lilac)"
+    },
+    {
+      "name": "Kirana Putri",
+      "nickname": "KIRANA",
+      "emoji": "🌟",
+      "role": "galeri & foto",
+      "quote": "tiap frame = 1 kenangan ter-backup",
+      "color": "var(--note-pink)"
+    },
+    {
+      "name": "Lukman Hakim",
+      "nickname": "LUKMAN",
+      "emoji": "🛠️",
+      "role": "tukang rapihin code",
+      "quote": "rapihin dulu biar nggak pusing besok",
+      "color": "var(--note-yellow)"
+    }
+  ]
+}

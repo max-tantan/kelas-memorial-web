@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { QUOTES } from '../data/content'
+import quotesData from '../data/quotes.json'
+import type { Quote } from '../data/types'
+
+const QUOTES = quotesData.quotes as Quote[]
 
 const CHARS = '!<>-_\\/[]{}—=+*^?#ABCXYZ0123456789'
 

@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion'
-import { NAV_LINKS } from '../data/content'
+import navData from '../data/navbar.json'
+import type { NavLink } from '../data/types'
+
+const NAV_LINKS = navData.links as NavLink[]
 
 export default function Navbar() {
   return (
